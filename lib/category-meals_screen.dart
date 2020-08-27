@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'meals_specification.dart';
 
 class CategoryMealsScreen extends StatelessWidget {
   static const routeName = '/categories-meals';
@@ -12,6 +13,9 @@ class CategoryMealsScreen extends StatelessWidget {
         ModalRoute.of(context).settings.arguments as Map<String, String>;
     final categoryTitle = routeArgs['title'];
     final categoryId = routeArgs['id'];
+    final categoryMeals = MealSpecification.where((element) {
+      
+    });
 
     return Scaffold(
       appBar: AppBar(
