@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './models/Category.dart';
-import './models/meals.dart';
+import 'models/Category.dart';
+import 'models/meals.dart';
 
 const MealSpecification = const [
    Category(
@@ -189,8 +189,8 @@ const DUMMY_MEALS = const [
   Meal(
     id: 'm5',
     categories: [
-      'c2'
-          'c5',
+      'c2',
+      'c5',
       'c10',
     ],
     title: 'Salad with Smoked Salmon',
