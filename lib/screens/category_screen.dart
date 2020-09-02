@@ -5,11 +5,7 @@ import 'package:flutter/material.dart';
 class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('African Meals'),
-      ),
-      body: GridView(
+    return GridView(
         padding: const EdgeInsets.all(20),
         children: MealSpecification.map(
           (categoryData) => CategoryItem(
@@ -24,7 +20,6 @@ class CategoryScreen extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
         ),
-      ),
     );
   }
 }

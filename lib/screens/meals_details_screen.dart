@@ -6,7 +6,7 @@ class MealsDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mealId = ModalRoute.of(context).settings.arguments;
+    final mealId = ModalRoute.of(context).settings.arguments as String;
     final selectedMeal = DUMMY_MEALS.firstWhere((meal) => meal.id == mealId);
 
     Widget heading(BuildContext context, String text) {
@@ -63,6 +63,7 @@ class MealsDetailScreen extends StatelessWidget {
               ),
             ),
             heading(context, 'Steps'),
+            
             buildContainer(ListView.builder(
               itemBuilder: (context, index) => Column(
                 children: [
