@@ -1,3 +1,5 @@
+
+
 import 'package:Meals_category/meals_specification_data.dart';
 import 'package:flutter/material.dart';
 
@@ -63,7 +65,6 @@ class MealsDetailScreen extends StatelessWidget {
               ),
             ),
             heading(context, 'Steps'),
-            
             buildContainer(ListView.builder(
               itemBuilder: (context, index) => Column(
                 children: [
@@ -79,6 +80,14 @@ class MealsDetailScreen extends StatelessWidget {
               itemCount: selectedMeal.steps.length,
             ))
           ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pop(mealId);
+        },
+        child: Icon(
+          Icons.delete,
         ),
       ),
     );

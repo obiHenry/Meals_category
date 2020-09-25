@@ -30,7 +30,8 @@ class _TabScreenState extends State<TabScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return 
+    Scaffold(
       appBar: AppBar(
         title: Text(_pages[_selectedPageIndex]['title']),
       ),
